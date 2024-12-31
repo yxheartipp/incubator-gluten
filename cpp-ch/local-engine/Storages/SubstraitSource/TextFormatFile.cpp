@@ -16,11 +16,12 @@
  */
 #include "TextFormatFile.h"
 
-#if USE_HIVE
+
 #include <memory>
 #include <Formats/FormatFactory.h>
 #include <Formats/FormatSettings.h>
 #include <Processors/Formats/IRowInputFormat.h>
+#if USE_HIVE
 #include <Processors/Formats/Impl/HiveTextRowInputFormat.h>
 #include <Poco/URI.h>
 
